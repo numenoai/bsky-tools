@@ -87,10 +87,12 @@ export class Followers {
   }
 
   async writeFollowers() {
-    console.log(
-      `Writing ${this.followers.length} followers to ` +
-        `${this.outputFile} in ${this.format}`,
-    )
+    if (this.outputFile) {
+      console.log(
+        `Writing ${this.followers.length} followers to ` +
+          `${this.outputFile} in ${this.format}`,
+      )
+    }
     if (this.format === 'json') {
       const json = JSON.stringify(this.followers, null, 2)
       if (this.outputFile) await fs.writeFile(this.outputFile, json)
@@ -105,12 +107,9 @@ export class Followers {
           csvStream.on('error', reject)
         })
         csvStream.pipe(out)
-        this.followers.forEach(
-          ({ did, handle, displayName, description }, i) => {
-            console.log(`Writing follower ${i + 1}: ${did}`)
-            csvStream.write({ did, handle, displayName, description })
-          },
-        )
+        this.followers.forEach(({ did, handle, displayName, description }) => {
+          csvStream.write({ did, handle, displayName, description })
+        })
         csvStream.end()
         await complete
       } finally {

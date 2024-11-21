@@ -1,6 +1,6 @@
 {
   "name": "@numenoai/bsky-follows",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bluesky follow and follower tools (by numeno.ai)",
   "author": "Numeno AI inc. <contact@numeno.ai>",
   "license": "MIT",

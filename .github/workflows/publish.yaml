@@ -32,7 +32,7 @@ jobs:
           node-version: 20
           cache: 'pnpm'
       - name: Update .npmrc
-        run: echo "//registry.npmjs.org/:_authToken${{ secrets.GITHUB_TOKEN }}" >> .npmrc
+        run: echo "//registry.npmjs.org/:_authToken${{ secrets.NPM_AUTH_TOKEN }}" >> .npmrc
       - run: pnpm i --frozen-lockfile
       - run: pnpm verify
       - name: Publish

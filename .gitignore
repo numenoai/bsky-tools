@@ -1,0 +1,21 @@
+node_modules
+lerna-debug.log
+npm-debug.log
+yarn-error.log
+.idea
+packages/*/coverage
+packages/waverly/*/coverage
+test.sqlite
+.DS_Store
+*.log
+.*.env
+.env
+\#*\#
+*~
+*.swp
+*.temp.json
+**/dist/
+*.tsbuildinfo
+
+# pyenv
+.python-version

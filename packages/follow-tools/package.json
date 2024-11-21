@@ -1,0 +1,41 @@
+{
+  "name": "@numenoai/follow-tools",
+  "version": "0.0.1",
+  "description": "Bluesky follow and follower tools (by numeno.ai)",
+  "author": "Numeno AI inc. <contact@numeno.ai>",
+  "license": "MIT",
+  "homepage": "https://numeno.ai",
+  "keywords": [
+    "bluesky",
+    "tool",
+    "cli",
+    "follow",
+    "follower"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/numenoai/bsky-tools",
+    "directory": "packages/follow-tools"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "follow-tools": "./bin/follow-tools.js"
+  },
+  "scripts": {
+    "start": "./bin/follow-tools.js",
+    "build": "tsc --build tsconfig.build.json",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.13.16",
+    "@atproto/oauth-client-node": "^0.2.1",
+    "@fast-csv/format": "^5.0.2",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^22.8.0",
+    "typed-emitter": "^2.1.0"
+  }
+}

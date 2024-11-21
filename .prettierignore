@@ -1,0 +1,14 @@
+node_modules
+interop-test-files
+dist
+build
+.nyc_output
+coverage
+pnpm-lock.yaml
+.pnpm*
+.changeset
+*.d.ts
+**/tests/**/assets/**/*
+**/ptests/**/results/**/*
+*.gen.ts
+waverly_sdk.ts

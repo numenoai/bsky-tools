@@ -1,4 +1,4 @@
-# @numenoai/follow-tools
+# @numenoai/bsky-follows
 
 ## 0.0.2
 

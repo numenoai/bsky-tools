@@ -83,6 +83,9 @@ importers:
       '@fast-csv/format':
         specifier: ^5.0.2
         version: 5.0.2
+      minimist:
+        specifier: ^1.2.8
+        version: 1.2.8
       picocolors:
         specifier: ^1.1.1
         version: 1.1.1
@@ -90,6 +93,9 @@ importers:
       '@jest/globals':
         specifier: ^29.7.0
         version: 29.7.0
+      '@types/minimist':
+        specifier: ^1.2.5
+        version: 1.2.5
       '@types/node':
         specifier: ^22.8.0
         version: 22.9.1

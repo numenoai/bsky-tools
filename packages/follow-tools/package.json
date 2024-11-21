@@ -31,10 +31,12 @@
     "@atproto/api": "^0.13.16",
     "@atproto/oauth-client-node": "^0.2.1",
     "@fast-csv/format": "^5.0.2",
+    "minimist": "^1.2.8",
     "picocolors": "^1.1.1"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
+    "@types/minimist": "^1.2.5",
     "@types/node": "^22.8.0",
     "typed-emitter": "^2.1.0"
   }

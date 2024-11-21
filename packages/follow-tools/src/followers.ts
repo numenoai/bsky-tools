@@ -139,5 +139,3 @@ export class Followers {
 type SessionEvents = {
   sessionChange: (session: AtpSessionData | undefined) => void
 }
-
-// vv53-a7jz-6wl6-vzz4

@@ -7,7 +7,7 @@ on:
       - main
 
 concurrency:
-  group: "${{ github.workflow }}-${{ github.head_ref || github.ref }}"
+  group: '${{ github.workflow }}-${{ github.head_ref || github.ref }}'
   cancel-in-progress: true
 
 env:
@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm"
+          cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
       - run: pnpm verify
       - name: Publish
@@ -39,5 +39,5 @@ jobs:
         with:
           publish: pnpm release
           version: pnpm version-packages
-          commit: "Version packages"
-          title: "Version packages"
+          commit: 'Version packages'
+          title: 'Version packages'

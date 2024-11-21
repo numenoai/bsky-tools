@@ -1,5 +1,5 @@
 {
-  "name": "@numenoai/follow-tools",
+  "name": "@numenoai/bsky-follows",
   "version": "0.0.2",
   "description": "Bluesky follow and follower tools (by numeno.ai)",
   "author": "Numeno AI inc. <contact@numeno.ai>",
@@ -15,15 +15,15 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/numenoai/bsky-tools",
-    "directory": "packages/follow-tools"
+    "directory": "packages/bsky-follows"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "follow-tools": "./bin/follow-tools.js"
+    "bsky-follows": "./bin/bsky-follows.js"
   },
   "scripts": {
-    "start": "./bin/follow-tools.js",
+    "start": "./bin/bsky-follows.js",
     "build": "tsc --build tsconfig.build.json",
     "test": "jest --passWithNoTests"
   },

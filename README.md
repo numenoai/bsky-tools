@@ -6,4 +6,4 @@ If you're interested in contributing, see the [development documentation](./docs
 
 ## Available utilities
 
-- [Follower tools](./packages/follow-tools/README.md) to export all your followers to a spreadsheet.
+- [Follower tools](./packages/bsky-follows/README.md) to export all your followers to a spreadsheet.

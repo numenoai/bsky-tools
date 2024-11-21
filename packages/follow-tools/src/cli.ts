@@ -25,7 +25,7 @@ function usage(error?: string): void {
     ['--output', 'FILE', 'Output to a file instead of stdout'],
     ['--format', 'FORMAT', 'Output format (json, csv)'],
     ['--help, -h', '', 'Show this help message'],
-    ['--version, -v', '', 'Print the version of follow-tools'],
+    ['--version, -v', '', 'Print the version of bsky-follows'],
   ]
 
   const commands = [['followers', 'Export your followers']]
@@ -51,14 +51,14 @@ function usage(error?: string): void {
 
   const msg = [
     pc.bold(`NAME`),
-    `    follow-tools - manage your followers on Bluesky, by numeno.ai`,
+    `    bsky-follows - manage your followers on Bluesky, by numeno.ai`,
     ``,
     pc.bold(`SYNOPSIS`),
-    brIns(pc.bold(`follow-tools`), pc.underline(`COMMAND`), ...globalsShort),
+    brIns(pc.bold(`bsky-follows`), pc.underline(`COMMAND`), ...globalsShort),
     ``,
     pc.bold(`DESCRIPTION`),
     brPar(
-      `The follow-tools CLI logs in is a command line tool to manage your`,
+      `The bsky-follows CLI logs in is a command line tool to manage your`,
       `follow and followers on Bluesky.`,
     ),
     ``,

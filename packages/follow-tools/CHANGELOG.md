@@ -1,5 +1,11 @@
 # @numeno/bsky-follows
 
+## 0.0.4
+
+### Patch Changes
+
+- db45f0c: Mostly for testing
+
 ## 0.0.3
 
 ### Patch Changes

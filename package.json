@@ -26,7 +26,7 @@
     "build": "pnpm -r --stream build",
     "test": "pnpm -r --stream test",
     "changeset": "changeset",
-    "release": "pnpm build && changeset publish",
+    "release": "pnpm build && changeset publish --access=public",
     "version-packages": "changeset version && git add",
     "clean": "find . -type d -name 'dist' -exec rm -rf {} + && find . -type f -name '*.tsbuildinfo' -exec rm -rf {} +",
     "clean:deps": "find . -type d -name 'node_modules' -exec rm -rf {} +"

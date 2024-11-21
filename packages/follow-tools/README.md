@@ -9,10 +9,10 @@ You will need to install `node` to run this tool. Here are [the instructions](ht
 Now you can export your followers to CSV:
 
 ```sh
-npx @numenoai/bsky-follows followers --user=<username> --password=<password> --output=followers.csv --format=csv
+npx @numeno/bsky-follows followers --user=<username> --password=<password> --output=followers.csv --format=csv
 ```
 
-For more options check out `npx @numenoai/bsky-follows --help`.
+For more options check out `npx @numeno/bsky-follows --help`.
 
 Brought to you by the nice folks at [numeno.ai](https://numeno.ai).
 

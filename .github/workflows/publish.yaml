@@ -33,8 +33,6 @@ jobs:
           cache: 'pnpm'
       - name: Update .npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> .npmrc
-      - name: Check temporary
-        run: cat .npmrc
       - run: pnpm i --frozen-lockfile
       - run: pnpm verify
       - name: Publish
